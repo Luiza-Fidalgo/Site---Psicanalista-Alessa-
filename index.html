@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RenovaMente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo RenovaMente" class="logo" />
+    <div class="menu-btn" id="menu-btn">☰</div>
+    <nav id="menu">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#footer">Contato</a>
+      <a href="#servicos" class="btn-primary">Agende sua análise</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>RenovaMente:</h1>
+      <h2>Transforme sua vida<br />com a psicanálise</h2>
+      <p>Acolhimento, escuta e autoconhecimento<br />para você encontrar equilíbrio emocional</p>
+      <a href="#servicos" class="btn-primary">Agendar sessão</a>
+    </div>
+    <img src="imagem1.png" alt="Imagem principal" class="main-image" />
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="sobre-bg-animation"></div>
+    <div class="sobre-container">
+      <img src="alessa.png" alt="Alessa Fidalgo" class="sobre-img" />
+      <div class="sobre-text">
+        <h2>Quem é Alessa Fidalgo?</h2>
+        <p>
+          Alessa Fidalgo dedica sua vida ao desenvolvimento humano. Professora desde 2002,
+          transformou sua paixão pela educação em um propósito ainda maior:
+          hoje é <strong>psicopedagoga</strong> e <strong>psicanalista</strong>, unindo ciência, escuta e acolhimento.
+        </p>
+        <p>
+          Com sua atuação, auxilia crianças, apoia adultos e conduz cada sessão com profundidade e sensibilidade.
+        </p>
+        <p>Os atendimentos são realizados <strong>exclusivamente online</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="services-section">
+    <h2 class="titulo-servicos">Serviços Disponíveis</h2>
+    <div class="chat-container">
+      <div class="chat-box" id="chatBox">
+        <div class="message bot">
+          <img src="alessa.png" class="avatar">
+          <div class="bubble bot-bubble">
+            Olá! 😊 Eu sou o assistente da <strong>Alessa Fidalgo</strong>.<br><br>
+            Sobre qual serviço você deseja saber mais?
+          </div>
+        </div>
+      </div>
+      <div class="options" id="optionsContainer">
+        <button class="option-btn" data-service="análise" data-action="select">Análise</button>
+        <button class="option-btn" data-service="terapia de casal" data-action="select">Terapia de Casal</button>
+        <button class="option-btn" data-service="psicanálise" data-action="select">Psicanálise</button>
+        <button class="option-btn" data-service="psicopedagogia" data-action="select">Psicopedagogia</button>
+        <button class="option-btn" data-service="orientação parental" data-action="select">Orientação Parental</button>
+        <button class="option-btn" data-service="avaliação emocional" data-action="select">Avaliação Emocional</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+  <div class="footer-container">
+
+    <div class="footer-logo-direitos">
+      <img src="logo.png" alt="Logo RenovaMente" class="footer-logo">
+      <p>© 2025 RenovaMente. Todos os direitos reservados.</p>
+    </div>
+
+    <div class="footer-menu">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contato">
+      <h3>Contato</h3>
+      <button class="btn-footer whatsapp" onclick="window.open('https://wa.me/5521992890612','_blank')">WhatsApp</button>
+      <button class="btn-footer email" onclick="window.location.href='mailto:afidalgo2011@hotmail.com'">E-mail</button>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

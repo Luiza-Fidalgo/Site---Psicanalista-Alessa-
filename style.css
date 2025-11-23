@@ -1,0 +1,639 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f2eb;
+  color: #5c3d2e;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: #ffffff;
+  border-bottom: 2px solid #e0d6cc;
+  position: relative;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8c5b3f;
+  transition: width 0.3s;
+  border-radius: 2px;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* BOTÃO MOBILE */
+.menu-btn {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #5c3d2e;
+}
+
+/* BOTÃO PRIMÁRIO */
+.btn-primary {
+  background: #8c5b3f;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #704731;
+}
+
+/* ------------------- HERO --------------------- */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 180px;
+  gap: 60px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin: 20px 0;
+  max-width: 600px;
+}
+
+.main-image {
+  max-width: 650px;
+}
+
+
+/* ---------------- SOBRE ---------------- */
+
+.sobre {
+  background: #5c3d2e;
+  padding: 100px 160px;
+  color: #f7f2eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.sobre-img {
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.sobre-text {
+  max-width: 600px;
+}
+
+.sobre-text h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.sobre-text p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+
+/* ------------------- ANIMAÇÃO DE FUNDO ------------------- */
+
+.sobre-bg-animation {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.sobre-bg-animation::before,
+.sobre-bg-animation::after {
+  content: "";
+  position: absolute;
+  width: 250%;
+  height: 250%;
+  top: 0;
+  left: 0;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.12) 6px, transparent 8px),
+    radial-gradient(rgba(255,255,255,0.08) 4px, transparent 6px),
+    radial-gradient(rgba(255,255,255,0.10) 5px, transparent 7px);
+  background-size: 120px 120px, 90px 90px, 150px 150px;
+  animation: floatBackground 45s linear infinite;
+}
+
+.sobre-bg-animation::after {
+  opacity: 0.6;
+  animation-duration: 28s;
+  animation-direction: reverse;
+}
+
+@keyframes floatBackground {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-25%); }
+}
+
+.sobre-container,
+.sobre-text,
+.sobre-img {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- SEÇÃO SERVIÇOS --- */
+.services-section {
+  background: #f7f2eb;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.titulo-servicos {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #5c3d2e;
+  font-weight: 800;
+}
+
+/* --- CHAT --- */
+.chat-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.chat-box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  min-height: 150px;
+  border: 1px solid #e7e7e7;
+}
+
+.bot-message, .user-message {
+  padding: 14px 18px;
+  border-radius: 18px;
+  margin-bottom: 12px;
+  max-width: 85%;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.bot-message {
+  background: #5c3d2e;
+  color: #fff;
+  border-bottom-left-radius: 4px;
+}
+
+.user-message {
+  background: #ddd;
+  color: #333;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+/* --- BOTÕES DE OPÇÃO --- */
+.options {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.option-btn {
+  padding: 12px 22px;
+  background: #5c3d2e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  transform: scale(1.05);
+  background: #7a5a45;
+}
+
+/* Ajuste mobile */
+@media (max-width: 600px) {
+  .option-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* ------------------ AVATARES NO CHAT ------------------ */
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.message.bot {
+  justify-content: flex-start;
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  object-fit: cover;
+  border: 2px solid #e7e7e7;
+}
+
+/* Balões */
+.bubble {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.bot-bubble {
+  background: #5c3d2e;
+  color: #fff;
+  border-bottom-left-radius: 4px;
+}
+
+.user-bubble {
+  background: #ddd;
+  color: #333;
+  border-bottom-right-radius: 4px;
+}
+
+
+/* ---------------- BOLHAS DE CHAT - DIGITANDO ---------------- */
+
+.bubble.typing::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 3px;
+  border-radius: 50%;
+  background: #fff;
+  animation: blink 1s infinite;
+}
+
+.bubble.typing::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 2px;
+  border-radius: 50%;
+  background: #fff;
+  animation: blink 1s infinite 0.2s;
+}
+
+.bubble.typing span {
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%, 20%, 50%, 80%, 100% { opacity: 0; }
+  40% { opacity: 1; }
+  60% { opacity: 1; }
+}
+
+/* ---------------- BOTÕES DE OPÇÃO ESTILIZADOS ---------------- */
+.option-btn {
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  border-radius: 20px;
+  background: #f0c040;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background: #ffd966;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ------------------- FOOTER ------------------- */
+
+.footer {
+  background-color: #ffffff;
+  color: #0d152b;
+  padding: 30px 20px;
+  font-family: 'Arial', sans-serif;
+  border-top: 2px solid #7a5a45;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  gap: 40px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo-direitos {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.footer-logo-direitos p {
+  color: #333;
+  font-size: 13px;
+}
+
+.footer-menu {
+  flex: 1 1 150px;
+}
+
+.footer-menu h3 {
+  margin-bottom: 10px;
+  color: #7a5a45;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 6px;
+}
+
+.footer-menu a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.footer-menu a:hover {
+  color: #7a5a45;
+  transform: translateX(3px);
+}
+
+.footer-contato {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-footer {
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-footer.whatsapp {
+  background-color: #25D366;
+  color: #fff;
+}
+
+.btn-footer.email {
+  background: linear-gradient(90deg, #ff6f61, #ff9a3c);
+  color: #fff;
+}
+
+.btn-footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text h2 {
+    font-size: 28px;
+  }
+
+  .main-image {
+    max-width: 450px;
+  }
+
+  .sobre {
+    padding: 80px 60px;
+  }
+
+  .sobre-img {
+    width: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #e0d6cc;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 0;
+    font-size: 20px;
+  }
+
+  nav a.btn-primary {
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .main-image {
+    max-width: 320px;
+  }
+
+  .sobre {
+    padding: 60px 30px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-img {
+    width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+  }
+
+  .main-image {
+    max-width: 260px;
+  }
+
+  .sobre-img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-logo-direitos, .footer-menu, .footer-contato {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .btn-footer {
+    width: 180px;
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .footer-logo {
+    width: 110px;
+  }
+
+  .footer-logo-direitos p {
+    font-size: 12px;
+  }
+
+  .btn-footer {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .footer-menu h3 {
+    font-size: 14px;
+  }
+
+  .footer-menu li {
+    margin-bottom: 4px;
+  }
+}
