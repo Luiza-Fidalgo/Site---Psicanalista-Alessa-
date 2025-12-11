@@ -9,8 +9,8 @@
 
 ## 📸 Demonstração
 
-![Preview do Site](https://via.placeholder.com/800x400?text=Insira+um+Print+ou+GIF+do+Site+Aqui)
-*(Substitua este link acima por um print da tela inicial ou um GIF navegando pelo site)*
+![Preview do Site](<img width="1597" height="764" alt="image" src="https://github.com/user-attachments/assets/d4fe04e1-7164-406c-a277-7564d099d4e4" />
+)
 
 ---
 
