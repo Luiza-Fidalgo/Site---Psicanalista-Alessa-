@@ -7,12 +7,6 @@
 
 ---
 
-## 📸 Demonstração
-
-![Preview do Site](<img width="1597" height="764" alt="image" src="https://github.com/user-attachments/assets/d4fe04e1-7164-406c-a277-7564d099d4e4" />)
-
----
-
 ## 💻 Sobre o Projeto
 
 Este projeto foi desenvolvido individualmente como parte de um **Projeto de Extensão**. O objetivo principal foi criar um ecossistema digital para a **Alessa Silva**, profissional das áreas de psicopedagogia e psicanálise clínica.
@@ -49,16 +43,3 @@ O projeto foi construído utilizando tecnologias fundamentais da web para garant
 * **Figma / Canva:** Prototipagem e Identidade Visual.
 * **WhatsApp Business:** Configuração de perfil, etiquetas e mensagens automáticas.
 * **Excel:** Desenvolvimento de planilha de gestão de pacientes.
-
----
-
-## 📂 Estrutura do Projeto
-
-Embora este repositório contenha o código-fonte do site, o projeto completo incluiu entregas offline.
-
-```bash
-├── assets/          # Imagens, logos e ícones
-├── css/             # Arquivos de estilo (style.css, animations.css)
-├── js/              # Lógica do Chatbot e interações (script.js)
-├── index.html       # Estrutura principal
-└── README.md        # Documentação
