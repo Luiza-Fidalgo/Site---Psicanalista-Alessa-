@@ -9,8 +9,7 @@
 
 ## 📸 Demonstração
 
-![Preview do Site](<img width="1597" height="764" alt="image" src="https://github.com/user-attachments/assets/d4fe04e1-7164-406c-a277-7564d099d4e4" />
-)
+![Preview do Site](<img width="1597" height="764" alt="image" src="https://github.com/user-attachments/assets/d4fe04e1-7164-406c-a277-7564d099d4e4" />)
 
 ---
 
